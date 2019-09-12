@@ -11,7 +11,10 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Navigation from "./navigation"
+import Footer from "./footer"
 import "./layout.css"
+import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+import "@fortawesome/fontawesome-free/js/all"
 
 const Layout = ({ children, title, siteTitle, bg }) => {
   const data = useStaticQuery(graphql`
@@ -37,11 +40,7 @@ const Layout = ({ children, title, siteTitle, bg }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer/>
       </div>
     </>
   )

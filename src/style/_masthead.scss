@@ -1,4 +1,10 @@
 // Styling for the masthead
+@keyframes bg-size{
+  0%{
+    background-size: 100%}
+  100%{
+    background-size: 150%}}
+
 header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
   margin-bottom: 50px;
@@ -6,6 +12,8 @@ header.masthead {
   background-color: $gray-600;
   background-attachment: scroll;
   position: relative;
+  animation: bg-size 3s;
+  animation-fill-mode: forwards;
   @include background-cover;
   .overlay {
     position: absolute;
