@@ -5,8 +5,10 @@ import SEO from "../components/seo"
 
 import {Container, Row, Col} from "reactstrap"
 
-const NotFoundPage = () => (
-  <Layout>
+import image from "../images/about-bg.jpg"
+
+const About = () => (
+  <Layout title={"About me"} siteTitle={"This is what I do."} bg={image}>
     <Container>
         <Row>
             <Col lg={8} md={10} className="mx-auto">
@@ -19,4 +21,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default About

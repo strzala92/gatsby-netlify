@@ -8,8 +8,10 @@ import SEO from "../components/seo"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../index.scss"
 
+import image from "../images/home-bg.jpg"
+
 const IndexPage = () => (
-  <Layout>
+  <Layout title={"Clean Blog"} siteTitle={"A Blog Theme by Start Bootstrap"} bg={image}>
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
