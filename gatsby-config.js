@@ -14,6 +14,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+       
+        baseUrl: `kursor18.ssd-linuxpl.com/wp-api/`,
+        protocol: `http`,
+        
+        hostingWPCOM: false,
+        
+        useACF: false
+      }
+    },
+    {
       resolve: `gatsby-plugin-sass`,
     },
     `gatsby-transformer-sharp`,
